@@ -3,7 +3,7 @@ import MovieCard from './MovieCard'
 
 
 async function getMovies(){
-  const res = await fetch('http://localhost:8080/api/v1/movies', { next: { revalidate: 300 } })
+  const res = await fetch('https://kanzu-code-movie-library-backend.onrender.com/api/v1/movies', { next: { revalidate: 300 } })
   return await res.json()
   
 }
